@@ -22,6 +22,7 @@
 		AD0909841E643C70009B9A75 /* Module2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909831E643C70009B9A75 /* Module2.m */; };
 		AD0909871E643C86009B9A75 /* Module2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909861E643C86009B9A75 /* Module2ViewController.m */; };
 		AD0909891E6448DF009B9A75 /* SFModularization.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AD0909881E6448DF009B9A75 /* SFModularization.podspec */; };
+		AD09098C1E644C78009B9A75 /* Module1+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = AD09098B1E644C78009B9A75 /* Module1+Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		AD0909851E643C86009B9A75 /* Module2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module2ViewController.h; sourceTree = "<group>"; };
 		AD0909861E643C86009B9A75 /* Module2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module2ViewController.m; sourceTree = "<group>"; };
 		AD0909881E6448DF009B9A75 /* SFModularization.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFModularization.podspec; sourceTree = "<group>"; };
+		AD09098A1E644C78009B9A75 /* Module1+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Module1+Test.h"; sourceTree = "<group>"; };
+		AD09098B1E644C78009B9A75 /* Module1+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Module1+Test.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 				AD0909721E64164D009B9A75 /* Module1ViewController.m */,
 				AD0909741E64165E009B9A75 /* Module1.h */,
 				AD0909751E64165E009B9A75 /* Module1.m */,
+				AD09098A1E644C78009B9A75 /* Module1+Test.h */,
+				AD09098B1E644C78009B9A75 /* Module1+Test.m */,
 			);
 			path = Module1;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 				AD0909391E63FEA2009B9A75 /* ViewController.m in Sources */,
 				AD0909361E63FEA2009B9A75 /* AppDelegate.m in Sources */,
 				AD0909841E643C70009B9A75 /* Module2.m in Sources */,
+				AD09098C1E644C78009B9A75 /* Module1+Test.m in Sources */,
 				AD0909731E64164D009B9A75 /* Module1ViewController.m in Sources */,
 				AD0909331E63FEA2009B9A75 /* main.m in Sources */,
 				AD0909761E64165E009B9A75 /* Module1.m in Sources */,
@@ -594,6 +600,7 @@
 				AD09095D1E63FEA2009B9A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD09095E1E63FEA2009B9A75 /* Build configuration list for PBXNativeTarget "SFModularizationTests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +609,7 @@
 				AD0909601E63FEA2009B9A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD0909611E63FEA2009B9A75 /* Build configuration list for PBXNativeTarget "SFModularizationUITests" */ = {
 			isa = XCConfigurationList;
@@ -610,6 +618,7 @@
 				AD0909631E63FEA2009B9A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

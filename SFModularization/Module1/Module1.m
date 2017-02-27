@@ -8,8 +8,7 @@
 
 #import "Module1.h"
 #import "SFModularization.h"
-#import "Module1Protocol.h"
-#import "Module1ViewController.h"
+#import "Module1+Test.h"
 
 @implementation Module1
 
@@ -24,15 +23,6 @@
 
 + (void)load {
     [[SFModularization sharedInstence] registerModule:[self sharedInstence] protocols:@[@protocol(Module1Protocol)]];
-}
-
-- (UIViewController *)module1ViewControllerWithText:(NSString *)text {
-    Module1ViewController *module1VC = [[Module1ViewController alloc] initWithNibName:nil bundle:nil];
-    module1VC.text = text;
-    module1VC.tabBarItem = [UITabBarItem new];
-    module1VC.tabBarItem.title = @"vc1";
-    
-    return module1VC;
 }
 
 
