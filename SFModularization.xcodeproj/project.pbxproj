@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD0909331E63FEA2009B9A75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909321E63FEA2009B9A75 /* main.m */; };
+		AD0909361E63FEA2009B9A75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909351E63FEA2009B9A75 /* AppDelegate.m */; };
+		AD0909391E63FEA2009B9A75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909381E63FEA2009B9A75 /* ViewController.m */; };
+		AD09093C1E63FEA2009B9A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD09093A1E63FEA2009B9A75 /* Main.storyboard */; };
+		AD09093E1E63FEA2009B9A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD09093D1E63FEA2009B9A75 /* Assets.xcassets */; };
+		AD0909411E63FEA2009B9A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD09093F1E63FEA2009B9A75 /* LaunchScreen.storyboard */; };
+		AD09094C1E63FEA2009B9A75 /* SFModularizationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD09094B1E63FEA2009B9A75 /* SFModularizationTests.m */; };
+		AD0909571E63FEA2009B9A75 /* SFModularizationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909561E63FEA2009B9A75 /* SFModularizationUITests.m */; };
+		AD09096A1E640205009B9A75 /* SFModularization.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909691E640205009B9A75 /* SFModularization.m */; };
+		AD09096E1E640662009B9A75 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD09096D1E640662009B9A75 /* SFAppDelegate.m */; };
+		AD0909731E64164D009B9A75 /* Module1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909721E64164D009B9A75 /* Module1ViewController.m */; };
+		AD0909761E64165E009B9A75 /* Module1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909751E64165E009B9A75 /* Module1.m */; };
+		AD0909841E643C70009B9A75 /* Module2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909831E643C70009B9A75 /* Module2.m */; };
+		AD0909871E643C86009B9A75 /* Module2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909861E643C86009B9A75 /* Module2ViewController.m */; };
+		AD0909891E6448DF009B9A75 /* SFModularization.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AD0909881E6448DF009B9A75 /* SFModularization.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD0909481E63FEA2009B9A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD0909261E63FEA2009B9A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD09092D1E63FEA2009B9A75;
+			remoteInfo = SFModularization;
+		};
+		AD0909531E63FEA2009B9A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD0909261E63FEA2009B9A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD09092D1E63FEA2009B9A75;
+			remoteInfo = SFModularization;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD09092E1E63FEA2009B9A75 /* SFModularization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFModularization.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0909321E63FEA2009B9A75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD0909341E63FEA2009B9A75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD0909351E63FEA2009B9A75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD0909371E63FEA2009B9A75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD0909381E63FEA2009B9A75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD09093B1E63FEA2009B9A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD09093D1E63FEA2009B9A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD0909401E63FEA2009B9A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD0909421E63FEA2009B9A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0909471E63FEA2009B9A75 /* SFModularizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFModularizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD09094B1E63FEA2009B9A75 /* SFModularizationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFModularizationTests.m; sourceTree = "<group>"; };
+		AD09094D1E63FEA2009B9A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0909521E63FEA2009B9A75 /* SFModularizationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFModularizationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0909561E63FEA2009B9A75 /* SFModularizationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFModularizationUITests.m; sourceTree = "<group>"; };
+		AD0909581E63FEA2009B9A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0909681E640205009B9A75 /* SFModularization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFModularization.h; sourceTree = "<group>"; };
+		AD0909691E640205009B9A75 /* SFModularization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFModularization.m; sourceTree = "<group>"; };
+		AD09096C1E640662009B9A75 /* SFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		AD09096D1E640662009B9A75 /* SFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		AD0909711E64164D009B9A75 /* Module1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module1ViewController.h; sourceTree = "<group>"; };
+		AD0909721E64164D009B9A75 /* Module1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module1ViewController.m; sourceTree = "<group>"; };
+		AD0909741E64165E009B9A75 /* Module1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module1.h; sourceTree = "<group>"; };
+		AD0909751E64165E009B9A75 /* Module1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module1.m; sourceTree = "<group>"; };
+		AD09097F1E6417E9009B9A75 /* Module1Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Module1Protocol.h; sourceTree = "<group>"; };
+		AD0909801E641841009B9A75 /* Module2Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Module2Protocol.h; sourceTree = "<group>"; };
+		AD0909811E6418EF009B9A75 /* SFModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFModuleProtocol.h; sourceTree = "<group>"; };
+		AD0909821E643C70009B9A75 /* Module2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module2.h; sourceTree = "<group>"; };
+		AD0909831E643C70009B9A75 /* Module2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module2.m; sourceTree = "<group>"; };
+		AD0909851E643C86009B9A75 /* Module2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module2ViewController.h; sourceTree = "<group>"; };
+		AD0909861E643C86009B9A75 /* Module2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module2ViewController.m; sourceTree = "<group>"; };
+		AD0909881E6448DF009B9A75 /* SFModularization.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFModularization.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD09092B1E63FEA2009B9A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0909441E63FEA2009B9A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD09094F1E63FEA2009B9A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD0909251E63FEA2009B9A75 = {
+			isa = PBXGroup;
+			children = (
+				AD0909881E6448DF009B9A75 /* SFModularization.podspec */,
+				AD0909301E63FEA2009B9A75 /* SFModularization */,
+				AD09094A1E63FEA2009B9A75 /* SFModularizationTests */,
+				AD0909551E63FEA2009B9A75 /* SFModularizationUITests */,
+				AD09092F1E63FEA2009B9A75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD09092F1E63FEA2009B9A75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD09092E1E63FEA2009B9A75 /* SFModularization.app */,
+				AD0909471E63FEA2009B9A75 /* SFModularizationTests.xctest */,
+				AD0909521E63FEA2009B9A75 /* SFModularizationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD0909301E63FEA2009B9A75 /* SFModularization */ = {
+			isa = PBXGroup;
+			children = (
+				AD0909641E63FEAE009B9A75 /* lib */,
+				AD0909781E6416B1009B9A75 /* ModuleProtocol */,
+				AD09096F1E641632009B9A75 /* Module1 */,
+				AD0909701E641632009B9A75 /* Module2 */,
+				AD0909341E63FEA2009B9A75 /* AppDelegate.h */,
+				AD0909351E63FEA2009B9A75 /* AppDelegate.m */,
+				AD0909371E63FEA2009B9A75 /* ViewController.h */,
+				AD0909381E63FEA2009B9A75 /* ViewController.m */,
+				AD09093A1E63FEA2009B9A75 /* Main.storyboard */,
+				AD09093D1E63FEA2009B9A75 /* Assets.xcassets */,
+				AD09093F1E63FEA2009B9A75 /* LaunchScreen.storyboard */,
+				AD0909421E63FEA2009B9A75 /* Info.plist */,
+				AD0909311E63FEA2009B9A75 /* Supporting Files */,
+			);
+			path = SFModularization;
+			sourceTree = "<group>";
+		};
+		AD0909311E63FEA2009B9A75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD0909321E63FEA2009B9A75 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD09094A1E63FEA2009B9A75 /* SFModularizationTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD09094B1E63FEA2009B9A75 /* SFModularizationTests.m */,
+				AD09094D1E63FEA2009B9A75 /* Info.plist */,
+			);
+			path = SFModularizationTests;
+			sourceTree = "<group>";
+		};
+		AD0909551E63FEA2009B9A75 /* SFModularizationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD0909561E63FEA2009B9A75 /* SFModularizationUITests.m */,
+				AD0909581E63FEA2009B9A75 /* Info.plist */,
+			);
+			path = SFModularizationUITests;
+			sourceTree = "<group>";
+		};
+		AD0909641E63FEAE009B9A75 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AD0909681E640205009B9A75 /* SFModularization.h */,
+				AD0909691E640205009B9A75 /* SFModularization.m */,
+				AD09096C1E640662009B9A75 /* SFAppDelegate.h */,
+				AD09096D1E640662009B9A75 /* SFAppDelegate.m */,
+				AD0909811E6418EF009B9A75 /* SFModuleProtocol.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		AD09096F1E641632009B9A75 /* Module1 */ = {
+			isa = PBXGroup;
+			children = (
+				AD0909711E64164D009B9A75 /* Module1ViewController.h */,
+				AD0909721E64164D009B9A75 /* Module1ViewController.m */,
+				AD0909741E64165E009B9A75 /* Module1.h */,
+				AD0909751E64165E009B9A75 /* Module1.m */,
+			);
+			path = Module1;
+			sourceTree = "<group>";
+		};
+		AD0909701E641632009B9A75 /* Module2 */ = {
+			isa = PBXGroup;
+			children = (
+				AD0909821E643C70009B9A75 /* Module2.h */,
+				AD0909831E643C70009B9A75 /* Module2.m */,
+				AD0909851E643C86009B9A75 /* Module2ViewController.h */,
+				AD0909861E643C86009B9A75 /* Module2ViewController.m */,
+			);
+			path = Module2;
+			sourceTree = "<group>";
+		};
+		AD0909781E6416B1009B9A75 /* ModuleProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				AD09097F1E6417E9009B9A75 /* Module1Protocol.h */,
+				AD0909801E641841009B9A75 /* Module2Protocol.h */,
+			);
+			path = ModuleProtocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD09092D1E63FEA2009B9A75 /* SFModularization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD09095B1E63FEA2009B9A75 /* Build configuration list for PBXNativeTarget "SFModularization" */;
+			buildPhases = (
+				AD09092A1E63FEA2009B9A75 /* Sources */,
+				AD09092B1E63FEA2009B9A75 /* Frameworks */,
+				AD09092C1E63FEA2009B9A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFModularization;
+			productName = SFModularization;
+			productReference = AD09092E1E63FEA2009B9A75 /* SFModularization.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD0909461E63FEA2009B9A75 /* SFModularizationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD09095E1E63FEA2009B9A75 /* Build configuration list for PBXNativeTarget "SFModularizationTests" */;
+			buildPhases = (
+				AD0909431E63FEA2009B9A75 /* Sources */,
+				AD0909441E63FEA2009B9A75 /* Frameworks */,
+				AD0909451E63FEA2009B9A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD0909491E63FEA2009B9A75 /* PBXTargetDependency */,
+			);
+			name = SFModularizationTests;
+			productName = SFModularizationTests;
+			productReference = AD0909471E63FEA2009B9A75 /* SFModularizationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD0909511E63FEA2009B9A75 /* SFModularizationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD0909611E63FEA2009B9A75 /* Build configuration list for PBXNativeTarget "SFModularizationUITests" */;
+			buildPhases = (
+				AD09094E1E63FEA2009B9A75 /* Sources */,
+				AD09094F1E63FEA2009B9A75 /* Frameworks */,
+				AD0909501E63FEA2009B9A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD0909541E63FEA2009B9A75 /* PBXTargetDependency */,
+			);
+			name = SFModularizationUITests;
+			productName = SFModularizationUITests;
+			productReference = AD0909521E63FEA2009B9A75 /* SFModularizationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD0909261E63FEA2009B9A75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = sofach;
+				TargetAttributes = {
+					AD09092D1E63FEA2009B9A75 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EWE36XWL9D;
+						ProvisioningStyle = Automatic;
+					};
+					AD0909461E63FEA2009B9A75 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EWE36XWL9D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD09092D1E63FEA2009B9A75;
+					};
+					AD0909511E63FEA2009B9A75 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EWE36XWL9D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD09092D1E63FEA2009B9A75;
+					};
+				};
+			};
+			buildConfigurationList = AD0909291E63FEA2009B9A75 /* Build configuration list for PBXProject "SFModularization" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD0909251E63FEA2009B9A75;
+			productRefGroup = AD09092F1E63FEA2009B9A75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD09092D1E63FEA2009B9A75 /* SFModularization */,
+				AD0909461E63FEA2009B9A75 /* SFModularizationTests */,
+				AD0909511E63FEA2009B9A75 /* SFModularizationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD09092C1E63FEA2009B9A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0909411E63FEA2009B9A75 /* LaunchScreen.storyboard in Resources */,
+				AD09093E1E63FEA2009B9A75 /* Assets.xcassets in Resources */,
+				AD09093C1E63FEA2009B9A75 /* Main.storyboard in Resources */,
+				AD0909891E6448DF009B9A75 /* SFModularization.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0909451E63FEA2009B9A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0909501E63FEA2009B9A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD09092A1E63FEA2009B9A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD09096E1E640662009B9A75 /* SFAppDelegate.m in Sources */,
+				AD09096A1E640205009B9A75 /* SFModularization.m in Sources */,
+				AD0909391E63FEA2009B9A75 /* ViewController.m in Sources */,
+				AD0909361E63FEA2009B9A75 /* AppDelegate.m in Sources */,
+				AD0909841E643C70009B9A75 /* Module2.m in Sources */,
+				AD0909731E64164D009B9A75 /* Module1ViewController.m in Sources */,
+				AD0909331E63FEA2009B9A75 /* main.m in Sources */,
+				AD0909761E64165E009B9A75 /* Module1.m in Sources */,
+				AD0909871E643C86009B9A75 /* Module2ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0909431E63FEA2009B9A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD09094C1E63FEA2009B9A75 /* SFModularizationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD09094E1E63FEA2009B9A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0909571E63FEA2009B9A75 /* SFModularizationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD0909491E63FEA2009B9A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD09092D1E63FEA2009B9A75 /* SFModularization */;
+			targetProxy = AD0909481E63FEA2009B9A75 /* PBXContainerItemProxy */;
+		};
+		AD0909541E63FEA2009B9A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD09092D1E63FEA2009B9A75 /* SFModularization */;
+			targetProxy = AD0909531E63FEA2009B9A75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD09093A1E63FEA2009B9A75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD09093B1E63FEA2009B9A75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD09093F1E63FEA2009B9A75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD0909401E63FEA2009B9A75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD0909591E63FEA2009B9A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD09095A1E63FEA2009B9A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD09095C1E63FEA2009B9A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFModularization/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFModularization;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD09095D1E63FEA2009B9A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFModularization/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFModularization;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AD09095F1E63FEA2009B9A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFModularizationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFModularizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFModularization.app/SFModularization";
+			};
+			name = Debug;
+		};
+		AD0909601E63FEA2009B9A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFModularizationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFModularizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFModularization.app/SFModularization";
+			};
+			name = Release;
+		};
+		AD0909621E63FEA2009B9A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFModularizationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFModularizationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SFModularization;
+			};
+			name = Debug;
+		};
+		AD0909631E63FEA2009B9A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFModularizationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFModularizationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SFModularization;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD0909291E63FEA2009B9A75 /* Build configuration list for PBXProject "SFModularization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0909591E63FEA2009B9A75 /* Debug */,
+				AD09095A1E63FEA2009B9A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD09095B1E63FEA2009B9A75 /* Build configuration list for PBXNativeTarget "SFModularization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD09095C1E63FEA2009B9A75 /* Debug */,
+				AD09095D1E63FEA2009B9A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD09095E1E63FEA2009B9A75 /* Build configuration list for PBXNativeTarget "SFModularizationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD09095F1E63FEA2009B9A75 /* Debug */,
+				AD0909601E63FEA2009B9A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD0909611E63FEA2009B9A75 /* Build configuration list for PBXNativeTarget "SFModularizationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0909621E63FEA2009B9A75 /* Debug */,
+				AD0909631E63FEA2009B9A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD0909261E63FEA2009B9A75 /* Project object */;
+}
