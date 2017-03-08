@@ -22,13 +22,13 @@
     // Override point for customization after application launch.
     [super application:application didFinishLaunchingWithOptions:launchOptions];
     
-    id<Module1Protocol> module1 = [[SFModularization sharedInstence] modulePerformsProtocol:@protocol(Module1Protocol)];
+    id<Module1Protocol> module1 = [[SFModularization sharedInstence] moduleConformsToProtocol:@protocol(Module1Protocol)];
     UIViewController *vc1 = [module1 module1ViewControllerWithText:@"111111"];
     UINavigationController *navi1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     navi1.tabBarItem = [UITabBarItem new];
     navi1.tabBarItem.title = @"vc1";
     
-    id<Module2Protocol> module2 = [[SFModularization sharedInstence] modulePerformsProtocol:@protocol(Module2Protocol)];
+    id<Module2Protocol> module2 = [[SFModularization sharedInstence] moduleConformsToProtocol:@protocol(Module2Protocol)];
     UIViewController *vc2 = [module2 module2ViewControllerWithText:@"222222"];
     UINavigationController *navi2 = [[UINavigationController alloc] initWithRootViewController:vc2];
     navi2.tabBarItem = [UITabBarItem new];

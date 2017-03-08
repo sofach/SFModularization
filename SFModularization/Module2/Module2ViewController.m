@@ -9,6 +9,7 @@
 #import "Module2ViewController.h"
 #import "SFModularization.h"
 #import "Module1Protocol.h"
+#import "ModuleEvent.h"
 
 @interface Module2ViewController ()
 
@@ -23,6 +24,7 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"pushVC1" style:UIBarButtonItemStylePlain target:self action:@selector(pushVC1)];
     
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"change title" style:UIBarButtonItemStylePlain target:self action:@selector(changeTitle)];
     
     self.title = _text;
 }
@@ -32,9 +34,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)changeTitle {
+    [[SFModularization sharedInstence] sendEvent:ModuleEvent params:@{@"param":@"value"}];
+}
+
 - (void)pushVC1 {
-    id<Module1Protocol> module1 = [[SFModularization sharedInstence] modulePerformsProtocol:@protocol(Module1Protocol)];
+    id<Module1Protocol> module1 = [[SFModularization sharedInstence] moduleConformsToProtocol:@protocol(Module1Protocol)];
     UIViewController *vc1 = [module1 module1ViewControllerWithText:@"1111111"];
+    vc1.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc1 animated:YES];
     
 }

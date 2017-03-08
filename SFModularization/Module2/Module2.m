@@ -9,6 +9,7 @@
 #import "Module2.h"
 #import "SFModularization.h"
 #import "Module2ViewController.h"
+#import "ModuleEvent.h"
 
 @implementation Module2
 
@@ -23,6 +24,7 @@
 
 + (void)load {
     [[SFModularization sharedInstence] registerModule:[self sharedInstence] protocols:@[@protocol(Module2Protocol)]];
+    [[SFModularization sharedInstence] addListener:[self sharedInstence] toEvent:ModuleEvent];
 }
 
 - (UIViewController *)module2ViewControllerWithText:(NSString *)text {
@@ -30,6 +32,15 @@
     module2VC.text = text;
     
     return module2VC;
+}
+
+#pragma mark SFModuleProtocol
+- (void)receiveEvent:(NSString *)event params:(NSDictionary *)params {
+    NSLog(@"%@ receieve event:%@ params:%@", NSStringFromClass([self class]), event, params);
+}
+
+- (SFModulePriority)modulePriority {
+    return SFModulePriorityHigh;
 }
 
 @end

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SFModularization"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "模块化框架"
 
   s.description  = <<-DESC

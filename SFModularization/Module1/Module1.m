@@ -9,6 +9,7 @@
 #import "Module1.h"
 #import "SFModularization.h"
 #import "Module1+Test.h"
+#import "ModuleEvent.h"
 
 @implementation Module1
 
@@ -23,7 +24,10 @@
 
 + (void)load {
     [[SFModularization sharedInstence] registerModule:[self sharedInstence] protocols:@[@protocol(Module1Protocol)]];
+    [[SFModularization sharedInstence] addListener:[self sharedInstence] toEvent:ModuleEvent];
 }
 
-
+- (void)receiveEvent:(NSString *)event params:(NSDictionary *)params {
+    NSLog(@"%@ receieve event:%@ params:%@", NSStringFromClass([self class]), event, params);
+}
 @end

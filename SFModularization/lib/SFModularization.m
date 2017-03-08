@@ -10,9 +10,13 @@
 
 @interface SFModularization ()
 
-@property (strong, nonatomic) NSMutableDictionary *moduleMap;
-@property (strong, nonatomic) NSMutableSet *modules;
+@property (strong, nonatomic) NSMutableArray *modules;
+
+@property (strong, nonatomic) NSMutableDictionary *nameModuleMap;
+
 @property (strong, nonatomic) NSMutableDictionary *protocolModuleMap;
+
+@property (strong, nonatomic) NSMutableDictionary *eventModulesMap;
 
 @end
 
@@ -30,9 +34,10 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _moduleMap = [NSMutableDictionary dictionary];
-        _modules = [NSMutableSet set];
+        _modules = [NSMutableArray arrayWithCapacity:5];
+        _nameModuleMap = [NSMutableDictionary dictionary];
         _protocolModuleMap = [NSMutableDictionary dictionary];
+        _eventModulesMap = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -48,11 +53,24 @@
     if (!moduleName) {
         return nil;
     }
-    id<SFModuleProtocol> module = [self.moduleMap objectForKey:moduleName];
+    id<SFModuleProtocol> module = [self.nameModuleMap objectForKey:moduleName];
     
     return module;
 }
 
+- (void)addModule:(id<SFModuleProtocol>)module intoArray:(NSMutableArray *)array {
+    SFModulePriority priority = SFModulePriorityDefault;
+    if ([module respondsToSelector:@selector(modulePriority)]) {
+        priority = [module modulePriority];
+    }
+    if (priority==SFModulePriorityHigh) {
+        [array insertObject:module atIndex:0];
+    } else if (priority==SFModulePriorityHigh) {
+        [array addObject:module];
+    } else {
+        [array addObject:module];
+    }
+}
 
 
 #pragma mark - public method
@@ -60,7 +78,7 @@
     if (!block) {
         return;
     }
-    [_modules enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
+    [_modules enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         block(obj);
     }];
 }
@@ -77,11 +95,12 @@
     } else {
         moduleName = NSStringFromClass([module class]);
     }
-    
-    if ([self.moduleMap objectForKey:moduleName]) {
-        NSLog(@"[warn] register module name:%@, already exist:%@", moduleName, [self.moduleMap objectForKey:moduleName]);
+    if ([self.nameModuleMap objectForKey:moduleName]) {
+        NSLog(@"[warn] register module name:%@, already exist:%@", moduleName, [self.nameModuleMap objectForKey:moduleName]);
         return NO;
     }
+    [self.nameModuleMap setObject:module forKey:moduleName];
+
     [protocols enumerateObjectsUsingBlock:^(Protocol * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         NSString *protocolName = NSStringFromProtocol(obj);
@@ -92,20 +111,55 @@
             [_protocolModuleMap setObject:module forKey:protocolName];
         }
     }];
-    [self.moduleMap setObject:module forKey:moduleName];
-    [self.modules addObject:module];
+    [self addModule:module intoArray:self.modules];
     
     return YES;
 }
 
-- (id)modulePerformsProtocol:(Protocol *)protocol {
+
+- (void)addListener:(id<SFModuleProtocol>)module toEvent:(NSString *)event {
+    if (!event || !module) {
+        NSLog(@"[warn] add listener, module or event can't be nil");
+        return;
+    }
+    NSMutableArray *modules = [_eventModulesMap objectForKey:event];
+    if (!modules) {
+        modules = [NSMutableArray array];
+    }
+    [self addModule:module intoArray:modules];
+    
+    [_eventModulesMap setObject:modules forKey:event];
+}
+
+- (void)removeListener:(id<SFModuleProtocol>)module toEvent:(NSString *)event {
+    NSMutableArray *modules = [_eventModulesMap objectForKey:event];
+    [modules removeObject:module];
+}
+
+- (void)removeAllListenersToEvent:(NSString *)event {
+    [_eventModulesMap removeObjectForKey:event];
+}
+
+- (id)moduleConformsToProtocol:(Protocol *)protocol {
     if (!protocol) {
         NSLog(@"[warn] get module from protocol, protocol can't be nil");
         return nil;
     }
     NSString *protocolName = NSStringFromProtocol(protocol);
+    
     return [_protocolModuleMap objectForKey:protocolName];
 }
+
+- (void)sendEvent:(NSString *)event params:(NSDictionary *)params {
+    NSMutableArray<id<SFModuleProtocol>> *modules = [_eventModulesMap objectForKey:event];
+    [modules enumerateObjectsUsingBlock:^(id<SFModuleProtocol>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj respondsToSelector:@selector(receiveEvent:params:)]) {
+            [obj receiveEvent:event params:params];
+        }
+    }];
+}
+
+
 
 - (id)performAction:(NSString *)actionName toModuleNamed:(NSString *)moduleName params:(NSDictionary *)params {
     return [self performAction:actionName toModuleNamed:moduleName params:params isRemote:NO];

@@ -77,6 +77,7 @@
 		AD0909881E6448DF009B9A75 /* SFModularization.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFModularization.podspec; sourceTree = "<group>"; };
 		AD09098A1E644C78009B9A75 /* Module1+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Module1+Test.h"; sourceTree = "<group>"; };
 		AD09098B1E644C78009B9A75 /* Module1+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Module1+Test.m"; sourceTree = "<group>"; };
+		ADE44F411E6FD6DE008EF838 /* ModuleEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleEvent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +213,7 @@
 			children = (
 				AD09097F1E6417E9009B9A75 /* Module1Protocol.h */,
 				AD0909801E641841009B9A75 /* Module2Protocol.h */,
+				ADE44F411E6FD6DE008EF838 /* ModuleEvent.h */,
 			);
 			path = ModuleProtocol;
 			sourceTree = "<group>";

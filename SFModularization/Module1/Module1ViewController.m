@@ -33,8 +33,9 @@
 }
 
 - (void)pushVC2 {
-    id<Module2Protocol> module2 = [[SFModularization sharedInstence] modulePerformsProtocol:@protocol(Module2Protocol)];
+    id<Module2Protocol> module2 = [[SFModularization sharedInstence] moduleConformsToProtocol:@protocol(Module2Protocol)];
     UIViewController *vc2 = [module2 module2ViewControllerWithText:@"222222"];
+    vc2.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc2 animated:YES];
     
 }

@@ -18,10 +18,14 @@
 
 - (BOOL)registerModule:(id<SFModuleProtocol>)module protocols:(NSArray<Protocol *> *)protocols;
 
-- (id)modulePerformsProtocol:(Protocol *)protocol;
+- (id)moduleConformsToProtocol:(Protocol *)protocol;
+
+- (void)addListener:(id<SFModuleProtocol>)module toEvent:(NSString *)event;
+- (void)removeListener:(id<SFModuleProtocol>)module toEvent:(NSString *)event;
+- (void)removeAllListenersToEvent:(NSString *)event;
+- (void)sendEvent:(NSString *)event params:(NSDictionary *)params;
 
 - (id)performAction:(NSString *)actionName toModuleNamed:(NSString *)moduleName params:(NSDictionary *)params;
-
 - (id)performAction:(NSString *)actionName toModuleNamed:(NSString *)moduleName params:(NSDictionary *)params isRemote:(BOOL)isRemote;
 
 @end
