@@ -23,6 +23,9 @@
     [super application:application didFinishLaunchingWithOptions:launchOptions];
     
     id<Module1Protocol> module1 = [[SFModularization sharedInstence] moduleConformsToProtocol:@protocol(Module1Protocol)];
+    
+    [module1 module1Test];
+    
     UIViewController *vc1 = [module1 module1ViewControllerWithText:@"111111"];
     UINavigationController *navi1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     navi1.tabBarItem = [UITabBarItem new];

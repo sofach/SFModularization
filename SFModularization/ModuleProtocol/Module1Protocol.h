@@ -12,5 +12,7 @@
 
 - (UIViewController *)module1ViewControllerWithText:(NSString *)text;
 
+- (void)module1Test;
+
 @end
 

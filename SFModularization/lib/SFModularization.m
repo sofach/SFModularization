@@ -146,8 +146,11 @@
         return nil;
     }
     NSString *protocolName = NSStringFromProtocol(protocol);
-    
-    return [_protocolModuleMap objectForKey:protocolName];
+    id module = [_protocolModuleMap objectForKey:protocolName];
+    if (!module) {
+        NSLog(@"[error] can't find module conforms to protocol:%@", protocolName);
+    }
+    return module;
 }
 
 - (void)sendEvent:(NSString *)event params:(NSDictionary *)params {

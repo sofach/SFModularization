@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SFModuleProtocol.h"
+#import "SFModule.h"
+#import "Module1Protocol.h"
 
-@interface Module1 : NSObject <SFModuleProtocol>
-
+@interface Module1 : SFModule <Module1Protocol>
 
 @end

@@ -23,6 +23,7 @@
 		AD0909871E643C86009B9A75 /* Module2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0909861E643C86009B9A75 /* Module2ViewController.m */; };
 		AD0909891E6448DF009B9A75 /* SFModularization.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AD0909881E6448DF009B9A75 /* SFModularization.podspec */; };
 		AD09098C1E644C78009B9A75 /* Module1+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = AD09098B1E644C78009B9A75 /* Module1+Test.m */; };
+		ADBD21131EF515CB0064C0E3 /* SFModule.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBD21121EF515CB0064C0E3 /* SFModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		AD0909881E6448DF009B9A75 /* SFModularization.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFModularization.podspec; sourceTree = "<group>"; };
 		AD09098A1E644C78009B9A75 /* Module1+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Module1+Test.h"; sourceTree = "<group>"; };
 		AD09098B1E644C78009B9A75 /* Module1+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Module1+Test.m"; sourceTree = "<group>"; };
+		ADBD21111EF515CB0064C0E3 /* SFModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFModule.h; sourceTree = "<group>"; };
+		ADBD21121EF515CB0064C0E3 /* SFModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFModule.m; sourceTree = "<group>"; };
 		ADE44F411E6FD6DE008EF838 /* ModuleEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleEvent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +183,8 @@
 				AD09096C1E640662009B9A75 /* SFAppDelegate.h */,
 				AD09096D1E640662009B9A75 /* SFAppDelegate.m */,
 				AD0909811E6418EF009B9A75 /* SFModuleProtocol.h */,
+				ADBD21111EF515CB0064C0E3 /* SFModule.h */,
+				ADBD21121EF515CB0064C0E3 /* SFModule.m */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -363,6 +368,7 @@
 				AD09098C1E644C78009B9A75 /* Module1+Test.m in Sources */,
 				AD0909731E64164D009B9A75 /* Module1ViewController.m in Sources */,
 				AD0909331E63FEA2009B9A75 /* main.m in Sources */,
+				ADBD21131EF515CB0064C0E3 /* SFModule.m in Sources */,
 				AD0909761E64165E009B9A75 /* Module1.m in Sources */,
 				AD0909871E643C86009B9A75 /* Module2ViewController.m in Sources */,
 			);
